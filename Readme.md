@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Дарина Савинова](https://up.htmlacademy.ru/adaptive/16/user/101840).
-* Наставник: `Неизвестно`.
+* Наставник: [Вадим Двухжилов](https://up.htmlacademy.ru/adaptive/16/user/122292).
 
 ---
 

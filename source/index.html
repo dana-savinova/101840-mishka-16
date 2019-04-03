@@ -158,5 +158,27 @@
         </a>
       </p>
     </footer>
+    <div class="overlay"></div>
+    <section class="modal modal-cart">
+      <h2 class="modal-cart__title">Добавить в корзину</h2>
+      <p class="modal-cart__hint">Выберите размер:</p>
+      <form class="modal-cart__form" action="https://echo.htmlacademy.ru" method="post">
+        <ul class="modal-cart__list">
+          <li class="modal-cart__item">
+            <input class="modal-cart__input" type="radio" id="size-s" name="size" value="S">
+            <label class="modal-cart__label" for="size-s">S</label>
+          </li>
+          <li class="modal-cart__item">
+            <input class="modal-cart__input" type="radio" id="size-m" name="size" value="M">
+            <label class="modal-cart__label" for="size-m">M</label>
+          </li>
+          <li class="modal-cart__item">
+            <input class="modal-cart__input" type="radio" id="size-l" name="size" value="L">
+            <label class="modal-cart__label" for="size-l">L</label>
+          </li>
+        </ul>
+        <button class="button button--green modal-cart__button" type="submit" name="button">Добавить</button>
+      </form>
+    </section>
   </body>
 </html>

@@ -1,0 +1,24 @@
+.site-nav {
+  @include list-reset;
+}
+
+.site-nav__link {
+  display: block;
+
+  font-size: $important-text;
+  font-weight: bold;
+  color: $nav-links-color;
+
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+
+    outline: none;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}

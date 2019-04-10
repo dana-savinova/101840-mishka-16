@@ -1,0 +1,30 @@
+.button {
+  display: inline-block;
+  width: 100%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+
+
+  font-size: $important-text;
+  line-height: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+
+  color: $main-text-color;
+  background-color: $bg-white;
+  border: 1px solid $main-text-color;
+
+  &:hover,
+  &:focus {
+    color: #ffffff;
+    background-color: #444444;
+    outline: none;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: #444444;
+  }
+}

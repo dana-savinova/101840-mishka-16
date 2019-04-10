@@ -1,0 +1,29 @@
+.social__icon {
+  fill: #231f20;
+}
+
+.social__link {
+  display: inline-block;
+  width: 40px;
+
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:hover .social__icon,
+  &:focus .social__icon {
+    fill: $footer-link-color;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &:active .social__icon {
+    fill: $footer-link-color;
+  }
+}

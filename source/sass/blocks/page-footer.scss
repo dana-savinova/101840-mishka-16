@@ -1,0 +1,30 @@
+.page-footer {
+  padding-right: 30px;
+  padding-bottom: 23px;
+  padding-left: 30px;
+
+
+  background-color: #f1f1f1;
+}
+
+.page-footer__list {
+  @include list-reset;
+
+  display: flex;
+  margin-bottom: 20px;
+  padding-top: 25px;
+  padding-right: 50px;
+  padding-bottom: 25px;
+  padding-left: 50px;
+
+  justify-content: space-between;
+  align-items: center;
+
+  border-bottom: 1px solid $border-grey;
+}
+
+
+.page-footer__copyright {
+  margin: 0 auto;
+  padding: 0;
+}

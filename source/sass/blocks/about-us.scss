@@ -1,0 +1,73 @@
+.about-us {
+  position: relative;
+
+  padding: 30px;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    width: 100%;
+    height: 6px;
+
+    background-image: url("../../img/bg-zigzag-line.svg");
+    background-repeat: repeat-x;
+    background-size: contain;
+  }
+}
+
+.about-us__list {
+  @include list-reset;
+}
+
+.about-us__item {
+  position: relative;
+
+  margin-bottom: 20px;
+  padding-top: 60px;
+
+  font-size: $important-text;
+  line-height: 20px;
+  font-weight: bold;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 60px;
+    height: 60px;
+
+    background-repeat: no-repeat;
+    background-size: auto;
+  }
+}
+
+.about-us__item--eco::before {
+  background-image: url("../../img/icon-feature-flower.svg");
+}
+
+.about-us__item--nordic::before {
+  background-image: url("../../img/icon-feature-money.svg");
+}
+
+.about-us__item--likes::before {
+  background-image: url("../../img/icon-feature-heart.svg");
+}
+
+.about-us__item--handmade::before {
+  background-image: url("../../img/icon-feature-ball.svg");
+}
+
+.about-us__item--domestic::before {
+  background-image: url("../../img/icon-feature-rocket.svg");
+}
+
+.about-us__item--gift::before {
+  background-image: url("../../img/icon-feature-heart.svg");
+}

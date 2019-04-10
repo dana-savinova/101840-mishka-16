@@ -1,0 +1,54 @@
+.promo {
+  padding: 30px;
+}
+
+.promo__title {
+  margin-bottom: 10px;
+}
+
+.promo__label {
+  margin-bottom: 30px;
+
+  font-size: $important-text;
+  line-height: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: $brand-color;
+}
+
+.promo__spec {
+  display: flex;
+  margin-bottom: 28px;
+
+  flex-direction: column;
+}
+
+.promo__row {
+  display: flex;
+  padding-top: 20px;
+  padding-bottom: 10px;
+
+  border-bottom: 1px solid $border-grey;
+}
+
+.promo__name {
+  width: 90px;
+}
+
+.promo__value {
+  margin: 0;
+  padding-left: 10px;
+}
+
+.promo__photo {
+  margin-bottom: 28px;
+}
+
+.promo__price {
+  display: block; //временно до сеток на flex
+  margin-bottom: 27px;
+
+  font-size: $important-text;
+  line-height: 24px;
+  text-align: center;
+}

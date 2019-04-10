@@ -1,4 +1,13 @@
+.hero {
+  padding-top: 40px;
+}
+
 .hero__title {
+  margin-bottom: 120px;
+
+  font-size: $main-title-text;
+  line-height: 30px;
+  text-align: center;
   color: $title-color;
 }
 
@@ -8,9 +17,11 @@
 
 .hero__link {
   position: relative;
-  display: block;
+
+  display: inline-block;
+
   width: 100%;
-  // min-height: 103px;
+  min-height: 103px;
   padding-top: 30px;
   padding-right: 160px;
   padding-bottom: 34px;
@@ -18,11 +29,9 @@
 
   font-size: 19px;
   line-height: 24px;
+  vertical-align: middle;
   font-weight: bold;
   text-decoration: none;
-
-  color: #ffffff;
-
 
   &:hover,
   &:focus {
@@ -34,15 +43,19 @@
     content: "";
 
     position: absolute;
-    top: 23px;
-    left: 230px;
+    top: 20px;
+    right: 25px;
+
     width: 62px;
     height: 62px;
+
     opacity: 0.5;
   }
 }
 
 .hero__link--interior {
+  color: #ffffff;
+
   background-color: $brand-color;
 
   &:hover {
@@ -57,6 +70,8 @@
 }
 
 .hero__link--toys {
+  color: #ffffff;
+
   background-color: $brand-color-dark;
 
   &:hover {

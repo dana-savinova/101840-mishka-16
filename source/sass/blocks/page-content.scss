@@ -1,0 +1,18 @@
+.page-content__title-wrapper {
+  min-height: 176px;
+  padding-top: 75px;
+  padding-right: 30px;
+  padding-left: 30px;
+
+  background-color: #f1f1f1;
+}
+
+.page-content__title {
+  margin: 0;
+  padding: 0;
+
+  font-size: $main-title-text;
+  line-height: 30px;
+  color: $title-color;
+  text-align: center;
+}

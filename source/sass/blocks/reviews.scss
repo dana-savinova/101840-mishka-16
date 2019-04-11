@@ -1,0 +1,44 @@
+.reviews {
+  position: relative;
+
+  padding: 30px;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    width: 100%;
+    height: 6px;
+
+    background-image: url("../../img/bg-zigzag-line.svg");
+    background-repeat: repeat-x;
+    background-size: contain;
+  }
+}
+
+.reviews__item {
+  margin: 0;
+}
+
+.reviews__text {
+  font-size: $primary-text;
+  line-height: 30px;
+}
+
+.reviews__author {
+  font-style: normal;
+}
+
+.reviews__name {
+  font-size: $important-text;
+  line-height: 24px;
+  font-weight: bold;
+}
+
+.reviews__profile {
+  font-size: $important-text;
+  line-height: 30px;
+}

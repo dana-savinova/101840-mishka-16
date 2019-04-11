@@ -1,0 +1,32 @@
+.page-header {
+  border-bottom: 1px solid $border-grey;
+}
+
+.page-header__toggle {
+  position: relative;
+
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-color: $white;
+
+  border: none;
+
+  &:active,
+  &:focus {
+    opacity: 0.3;
+
+    outline: none;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+
+    width: 20px;
+    height: 2px;
+
+    background-color: $black;
+    box-shadow: 0 6px 0 0 $black, 0 12px 0 0 $black;
+  }
+}

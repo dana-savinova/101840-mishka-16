@@ -1,0 +1,43 @@
+.copyright {
+  width: 188px;
+}
+
+.copyright__icon {
+  fill: $brand-color;
+}
+
+.copyright__text {
+  margin-right: 25px;
+
+  font-size: 19px;
+  line-height: 19px;
+  font-weight: bold;
+
+  color: $main-text-color;
+}
+
+.copyright__link {
+  display: flex;
+
+  align-items: center;
+
+  text-decoration: none;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:hover .copyright__icon,
+  &:focus .copyright__icon {
+    fill: $footer-link-color;
+    outline: none;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &:active .copyright__icon {
+    fill: $footer-link-color;
+  }
+}

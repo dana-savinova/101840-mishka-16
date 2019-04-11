@@ -1,0 +1,16 @@
+.catalog {
+  padding-top: 30px;
+  padding-right: 30px;
+  padding-bottom: 15px;
+  padding-left: 30px;
+}
+
+.catalog__list {
+  @include list-reset;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.catalog__item {
+  margin-bottom: 30px;
+}

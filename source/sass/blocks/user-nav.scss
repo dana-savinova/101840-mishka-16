@@ -3,7 +3,11 @@
 }
 
 .user-nav__link {
+  position: relative;
   display: block;
+  padding-top: 29px;
+  padding-left: 76px;
+  padding-bottom: 30px;
 
   font-size: $important-text;
   font-weight: bold;
@@ -11,9 +15,11 @@
 
   text-decoration: none;
 
+  border-top: 1px solid $border-grey;
+
   &:hover,
   &:focus {
-    opacity: 0.6;
+    color: rgba(0, 0, 0, 0.6);
 
     outline: none;
   }
@@ -21,4 +27,17 @@
   &:active {
     opacity: 0.3;
   }
+
+  &:hover .user-nav__icon,
+  &:active .user-nav__icon {
+    fill: $brand-color;
+  }
+}
+
+.user-nav__icon {
+  position: absolute;
+  top: 31px;
+  left: 31px;
+
+  fill: rgba(35, 31, 32, 0.2);
 }

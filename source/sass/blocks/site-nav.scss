@@ -4,12 +4,17 @@
 
 .site-nav__link {
   display: block;
+  padding-top: 29px;
+  padding-left: 76px;
+  padding-bottom: 29px;
 
   font-size: $important-text;
   font-weight: bold;
   color: $nav-links-color;
 
   text-decoration: none;
+
+  border-top: 1px solid $border-grey;
 
   &:hover,
   &:focus {

@@ -116,3 +116,14 @@
     padding-right: 81px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .about-us {
+    padding-righ: 225px;
+    padding-left: 225px;
+  }
+
+  .about-us__item {
+    width: 350px;
+  }
+}

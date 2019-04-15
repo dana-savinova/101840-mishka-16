@@ -99,3 +99,20 @@
 
   background-image: url("../../img/icon-feature-heart.svg");
 }
+
+@media (min-width: $tablet-width) {
+  .about-us__list {
+    display: flex;
+    flex-direction: row;
+
+    flex-wrap: wrap;
+  }
+
+  .about-us__item {
+    width: 334px;
+  }
+
+  .about-us__item:nth-child(odd) {
+    padding-right: 81px;
+  }
+}

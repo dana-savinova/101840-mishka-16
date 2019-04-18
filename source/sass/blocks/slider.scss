@@ -1,0 +1,36 @@
+.slider__toggles {
+  display: flex;
+  justify-content: space-between;
+}
+
+.slider__button {
+  position: relative;
+
+  width: 83px;
+  height: 48px;
+  background-color: $bg-white;
+  border: none;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+
+    outline: none;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.slider__button--prev {
+  background-image: url("../../img/icon-left-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+
+.slider__button--next {
+  background-image: url("../../img/icon-right-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: 50%;
+}

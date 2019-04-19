@@ -78,6 +78,8 @@
 
     width: 768px;
     margin: 0 auto;
+    margin-left: -2px;
+    padding-top: 47px;
     padding-right: 50px;
     padding-left: 50px;
 
@@ -85,7 +87,7 @@
       content: "";
       position: absolute;
 
-      top: -18px;
+      top: -9px;
       left: 0;
 
       width: 100%;
@@ -93,7 +95,7 @@
 
       background-image: url("../../img/bg-zigzag-fill.svg");
       background-size: 100%;
-      background-position-x: -10px;
+      background-position-x: 0;
       background-repeat: repeat-x;
     }
   }
@@ -101,6 +103,7 @@
   .promo__title-wrapper {
     display: flex;
     width: 100%;
+    margin-bottom: 45px;
 
     align-items: center;
 
@@ -113,7 +116,7 @@
   }
 
   .promo__label {
-    width: 80px;
+    width: 120px;
     margin-bottom: 0;
 
     text-align: center;
@@ -121,8 +124,7 @@
 
   .promo__wrapper {
     display: flex;
-    width: 50%;
-    max-height: 520px;
+    height: 520px;
 
     flex-direction: column;
 
@@ -130,15 +132,24 @@
   }
 
   .promo__description {
-    width: 264px;
+    width: 290px;
+    margin-bottom: 35px;
+
+    font-size: $important-text;
+    line-height: 30px;
   }
 
   .promo__spec {
     width: 290px;
+    margin-bottom: 54px;
   }
 
   .promo__price {
     width: 290px;
+    margin-bottom: 35px;
+
+    font-size: 20px;
+    line-height: 24px;
   }
 
   .promo__button {
@@ -146,13 +157,17 @@
   }
 
   .promo__photo-wrapper {
-    order: 10;
+    width: 334px;
+    margin-left: 45px;
+    padding-top: 8px;
+
+    order: 1;
   }
 
   .promo__photo {
+    display: block;
     width: 333px;
     height: 404px;
-    margin-left: 40px;
   }
 }
 
@@ -160,36 +175,50 @@
   .promo {
     width: 1150px;
     margin: 0 auto;
-    padding-top: 120px;
+    padding-top: 146px;
   }
 
   .promo__wrapper {
-    min-height: 778px;
+    height: 778px;
+    padding-left: 175px;
   }
 
   .promo__title-wrapper {
     width: 700px;
+
     flex-direction: row-reverse;
+    justify-content: flex-end;
+  }
+
+  .promo__label {
+    margin-left: 22px;
   }
 
   .promo__title {
     z-index: 1;
-  }
 
-  .promo__description,
-  .promo__spec,
-  .promo__price,
-  .promo__button {
-    margin-left: 170px;
+    margin-left: 29px;
+
+    font-size: 53px;
+    line-height: 57px;
   }
 
   .promo__photo-wrapper {
-    margin-top: -100px;
-    margin-left: 50px;
+    width: 525px;
+    margin-top: -168px;
+    margin-left: 58px;
   }
 
   .promo__photo {
     width: 525px;
     height: 636px;
+  }
+
+  .promo__description {
+    margin-bottom: 45px;
+  }
+
+  .promo__spec {
+    margin-bottom: 107px;
   }
 }

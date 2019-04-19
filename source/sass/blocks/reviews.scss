@@ -132,3 +132,13 @@
     border: none;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .reviews {
+    width: 1150px;
+  }
+
+  .reviews__slider {
+    margin-left: 175px;
+  }
+}

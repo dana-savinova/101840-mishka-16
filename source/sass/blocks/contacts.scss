@@ -88,7 +88,6 @@
     display: flex;
     padding-bottom: 57px;
     flex-direction: column;
-
   }
 
   .contacts__wrapper {
@@ -120,5 +119,39 @@
     width: 230px;
     margin-right: auto;
     margin-left: auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts {
+    width: 1150px;
+    margin: 0 auto;
+    padding-right: 50px;
+    padding-left: 50px;
+
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+
+  .contacts__list {
+    flex-direction: column;
+  }
+
+  .contacts__wrapper {
+    width: 525px;
+    margin: 0;
+  }
+
+  .contacts__map {
+    width: 525px;
+    margin: 0;
+  }
+
+  .contacts__button {
+    margin: 0;
+    margin-top: -52px;
+    margin-right: auto;
+    margin-left: 175px;
   }
 }

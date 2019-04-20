@@ -82,3 +82,43 @@
   display: block;
   z-index: -1;
 }
+
+@media (min-width: $tablet-width) {
+  .contacts {
+    display: flex;
+    padding-bottom: 57px;
+    flex-direction: column;
+
+  }
+
+  .contacts__wrapper {
+    width: 768px;
+    margin: 0 auto;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .contacts__list {
+    flex-direction: row;
+  }
+
+  .contacts__item {
+    width: 334px;
+    align-items: flex-start;
+  }
+
+  .contacts__map {
+    margin-bottom: 55px;
+  }
+
+  .contacts__google-map {
+    width: 100%;
+    height: 455;
+  }
+
+  .contacts__button {
+    width: 230px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}

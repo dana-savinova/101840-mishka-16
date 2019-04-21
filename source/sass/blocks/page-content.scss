@@ -1,8 +1,8 @@
 .page-content__title-wrapper {
-  min-height: 176px;
   padding-top: 75px;
   padding-right: 30px;
   padding-left: 30px;
+  padding-bottom: 71px;
 
   background-color: #f1f1f1;
 }
@@ -15,4 +15,18 @@
   line-height: 30px;
   color: $title-color;
   text-align: center;
+}
+
+
+@media (min-width: $tablet-width) {
+  .page-content__title {
+    max-width: 768px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-content__title {
+    max-width: 1150px;
+  }
 }

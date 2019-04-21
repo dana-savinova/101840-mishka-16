@@ -1,22 +1,18 @@
 .reviews {
   position: relative;
 
-  padding: 30px;
+  padding-top: 32px;
+  padding-right: 30px;
+  padding-bottom: 46px;
+  padding-left: 30px;
+}
 
-  &::before {
-    content: "";
+.reviews__list {
+  margin-bottom: 30px;
+}
 
-    position: absolute;
-    left: 0;
-    top: 0;
-
-    width: 100%;
-    height: 6px;
-
-    background-image: url("../../img/bg-zigzag-line.svg");
-    background-repeat: repeat-x;
-    background-size: contain;
-  }
+.reviews__title {
+  margin-bottom: 24px;
 }
 
 .reviews__item {
@@ -24,6 +20,8 @@
 }
 
 .reviews__text {
+  margin-bottom: 29px;
+
   font-size: $primary-text;
   line-height: 30px;
 }
@@ -33,12 +31,114 @@
 }
 
 .reviews__name {
+  display: block;
+  margin-bottom: 3px;
+
   font-size: $important-text;
   line-height: 24px;
   font-weight: bold;
 }
 
 .reviews__profile {
+  display: block;
+
   font-size: $important-text;
   line-height: 30px;
+}
+
+.reviews__toggles {
+  @include list-reset;
+  display: flex;
+  width: 260px;
+  margin-bottom: 39px;
+
+  justify-content: space-between;
+
+  box-shadow: 0 0 0 1px $border-grey;
+}
+
+.reviews__toggle {
+  @include list-reset;
+
+  width: 130px;
+
+  text-align: center;
+}
+
+.reviews__toggle:first-child {
+  border-right: 1px solid $border-grey;
+}
+
+.reviews__button {
+  width: 83px;
+  height: 48px;
+  background-color: $bg-white;
+  border: none;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+
+    outline: none;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.reviews__button--prev {
+  background-image: url("../img/icon-left-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+
+.reviews__button--next {
+  background-image: url("../img/icon-right-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+
+@media (min-width: $tablet-width) {
+  .reviews {
+    width: 768px;
+    margin: 0 auto;
+  }
+
+  .reviews__slider {
+    display: flex;
+
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .reviews__title {
+    order: -2;
+  }
+
+  .reviews__link {
+    width: 176px;
+    order: -1;
+  }
+
+  .reviews__toggles {
+    margin-left: auto;
+    margin-top: -89px;
+
+    box-shadow: none;
+  }
+
+  .reviews__toggle:first-child {
+    border: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .reviews {
+    width: 1150px;
+  }
+
+  .reviews__slider {
+    margin-left: 175px;
+  }
 }

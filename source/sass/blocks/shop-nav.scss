@@ -1,0 +1,36 @@
+.shop-nav__link {
+  display: block;
+
+  font-size: $important-text;
+  font-weight: bold;
+  color: $nav-links-color;
+
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+
+    outline: none;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .shop-nav__link {
+    padding-top: 19px;
+    padding-right: 35px;
+    padding-bottom: 30px;
+    padding-left: 0;
+
+    font-size: $primary-text;
+    line-height: 24px;
+  }
+
+  .shop-nav__item:nth-child(even) .shop-nav__link {
+    padding-left: 25px;
+  }
+}

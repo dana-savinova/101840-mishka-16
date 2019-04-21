@@ -1,9 +1,11 @@
-.user-nav {
-  @include list-reset;
-}
-
 .user-nav__link {
+  position: relative;
+
   display: block;
+
+  padding-top: 29px;
+  padding-left: 76px;
+  padding-bottom: 30px;
 
   font-size: $important-text;
   font-weight: bold;
@@ -11,14 +13,69 @@
 
   text-decoration: none;
 
+  border-top: 1px solid $border-grey;
+
   &:hover,
   &:focus {
-    opacity: 0.6;
+    color: rgba(0, 0, 0, 0.6);
 
     outline: none;
   }
 
   &:active {
     opacity: 0.3;
+  }
+
+  &:hover .user-nav__icon,
+  &:active .user-nav__icon {
+    fill: $brand-color;
+  }
+}
+
+.user-nav__icon {
+  position: absolute;
+  top: 31px;
+  left: 31px;
+
+  fill: rgba(35, 31, 32, 0.2);
+}
+
+@media (min-width: $tablet-width) {
+  .user-nav {
+    display: flex;
+
+    flex-wrap: wrap;
+  }
+
+  .user-nav__item {
+    border-left: 1px solid $border-grey;
+  }
+
+  .user-nav__link {
+    padding-top: 32px;
+    padding-left: 83px;
+    padding-bottom: 35px;
+
+    border: none;
+  }
+
+  .user-nav__icon {
+    top: 35px;
+    left: 32px;
+  }
+
+  .user-nav__link--search {
+    padding-top: 32px;
+    padding-bottom: 55px;
+  }
+
+  .user-nav__text--search {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .user-nav {
+    justify-content: flex-end;
   }
 }

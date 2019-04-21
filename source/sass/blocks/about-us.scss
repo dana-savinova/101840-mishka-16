@@ -1,7 +1,11 @@
 .about-us {
   position: relative;
 
-  padding: 30px;
+  width: 320px;
+  margin: 0 auto;
+  padding-top: 33px;
+  padding-right: 30px;
+  padding-left: 29px;
 
   &::before {
     content: "";
@@ -13,20 +17,28 @@
     width: 100%;
     height: 6px;
 
-    background-image: url("../../img/bg-zigzag-line.svg");
+    background-image: url("../img/bg-zigzag-line.svg");
     background-repeat: repeat-x;
-    background-size: contain;
+    background-size: auto 100%;
+    background-position-x: -6px;
   }
 }
 
+.about-us__title {
+  margin-bottom: 26px;
+}
+
 .about-us__list {
+  display: flex;
+  flex-direction: column;
+
   @include list-reset;
 }
 
 .about-us__item {
   position: relative;
 
-  margin-bottom: 20px;
+  margin-bottom: 23px;
   padding-top: 60px;
 
   font-size: $important-text;
@@ -49,25 +61,77 @@
 }
 
 .about-us__item--eco::before {
-  background-image: url("../../img/icon-feature-flower.svg");
+  top: 6px;
+  left: 9px;
+
+  background-image: url("../img/icon-feature-flower.svg");
 }
 
 .about-us__item--nordic::before {
-  background-image: url("../../img/icon-feature-money.svg");
+  top: 6px;
+  left: 1px;
+
+  background-image: url("../img/icon-feature-money.svg");
 }
 
 .about-us__item--likes::before {
-  background-image: url("../../img/icon-feature-heart.svg");
+  top: 12px;
+  left: 9px;
+
+  background-image: url("../img/icon-feature-heart.svg");
 }
 
 .about-us__item--handmade::before {
-  background-image: url("../../img/icon-feature-ball.svg");
+  top: 9px;
+  left: 4px;
+
+  background-image: url("../img/icon-feature-ball.svg");
 }
 
 .about-us__item--domestic::before {
-  background-image: url("../../img/icon-feature-rocket.svg");
+  top: 10px;
+  left: -4px;
+
+  background-image: url("../img/icon-feature-rocket.svg");
 }
 
 .about-us__item--gift::before {
-  background-image: url("../../img/icon-feature-heart.svg");
+  top: 7px;
+  left: 4px;
+
+  background-image: url("../img/icon-feature-gift.svg");
+}
+
+@media (min-width: $tablet-width) {
+  .about-us {
+    width: 768px;
+    margin: 0 auto;
+  }
+
+  .about-us__list {
+    display: flex;
+    flex-direction: row;
+
+    flex-wrap: wrap;
+  }
+
+  .about-us__item {
+    width: 334px;
+  }
+
+  .about-us__item:nth-child(odd) {
+    padding-right: 81px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .about-us {
+    width: 1150px;
+    padding-right: 225px;
+    padding-left: 225px;
+  }
+
+  .about-us__item {
+    width: 350px;
+  }
 }

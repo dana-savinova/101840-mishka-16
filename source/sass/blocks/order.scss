@@ -88,66 +88,65 @@
 
 .order__label--radio {
   padding-left: 60px;
+}
 
+.order__radio + .order__label--radio::before {
+  content: "";
 
-  .order__radio + &::before {
-    content: "";
+  position: absolute;
+  top: 10px;
+  left: 0;
 
-    position: absolute;
-    top: 10px;
-    left: 0;
+  width: 40px;
+  height: 40px;
 
-    width: 40px;
-    height: 40px;
+  border: 2px solid #000000;
+  border-radius: 50%;
+}
 
-    border: 2px solid #000000;
-    border-radius: 50%;
-  }
+.order__radio:checked + .order__label--radio::after {
+  content: "";
 
-  .order__radio:checked + &::after {
-    content: "";
+  position: absolute;
+  top: 22px;
+  left: 12px;
 
-    position: absolute;
-    top: 22px;
-    left: 12px;
+  width: 16px;
+  height: 16px;
 
-    width: 16px;
-    height: 16px;
-
-    background-color: $brand-color;
-    border-radius: 50%;
-  }
+  background-color: $brand-color;
+  border-radius: 50%;
 }
 
 
 .order__label--checkbox {
   padding-left: 60px;
+}
 
-  .order__checkbox + &::before {
-    content: "";
+.order__checkbox + .order__label--checkbox::before {
+  content: "";
 
-    position: absolute;
-    top: 10px;
-    left: 0;
+  position: absolute;
+  top: 10px;
+  left: 0;
 
-    width: 40px;
-    height: 40px;
-    border: 2px solid $bg-grey;
-  }
+  width: 40px;
+  height: 40px;
+  border: 2px solid $bg-grey;
+}
 
-  .order__checkbox:checked + &::after {
-    content: "";
+.order__checkbox:checked + .order__label--checkbox::after {
+  content: "";
 
-    position: absolute;
-    top: 20px;
-    left: 10px;
+  position: absolute;
+  top: 20px;
+  left: 10px;
 
-    width: 22px;
-    height: 17px;
-    background-image: url("../img/icon-tick.svg");
-    background-size: 100%;
-    background-repeat: no-repeat;
-  }
+  width: 22px;
+  height: 17px;
+  background-image: url("../img/icon-tick.svg");
+  background-size: 100%;
+  background-repeat: no-repeat;
 }
 
 .order__textarea {

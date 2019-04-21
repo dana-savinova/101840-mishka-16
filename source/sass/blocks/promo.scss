@@ -82,22 +82,6 @@
     padding-top: 47px;
     padding-right: 50px;
     padding-left: 50px;
-
-    &::after {
-      content: "";
-      position: absolute;
-
-      top: -9px;
-      left: 0;
-
-      width: 100%;
-      height: 34px;
-
-      background-image: url("../img/bg-zigzag-fill.svg");
-      background-size: 100%;
-      background-position-x: 0;
-      background-repeat: repeat-x;
-    }
   }
 
   .promo__title-wrapper {

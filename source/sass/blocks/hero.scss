@@ -111,7 +111,25 @@
 
 @media (min-width: $tablet-width) {
   .hero {
+    position: relative;
+
     margin-top: -78px;
+
+    &::after {
+      content: "";
+      position: absolute;
+
+      bottom: 0;
+      left: 0;
+
+      width: 100%;
+      height: 19px;
+
+      background-image: url("../img/bg-zigzag-fill.svg");
+      background-size: 100%;
+      background-position-x: 0;
+      background-repeat: repeat-x;
+    }
   }
 
   .hero__wrapper {
@@ -131,6 +149,8 @@
   }
 
   .hero__list {
+    position: relative;
+
     display: flex;
 
     flex-wrap: wrap;

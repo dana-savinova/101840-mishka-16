@@ -112,6 +112,7 @@
 @media (min-width: $tablet-width) {
   .hero {
     position: relative;
+    z-index: -1;
 
     margin-top: -78px;
 

@@ -231,3 +231,13 @@
     line-height: 30px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .order {
+    padding-top: 100px;
+  }
+
+  .order__wrapper {
+    width: 1150px;
+  }
+}

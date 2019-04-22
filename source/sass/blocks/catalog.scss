@@ -1,7 +1,6 @@
 .catalog {
   padding-top: 30px;
   padding-right: 30px;
-  padding-bottom: 15px;
   padding-left: 30px;
 }
 
@@ -14,14 +13,14 @@
 }
 
 .catalog__item {
-  margin-bottom: 30px;
+  margin-bottom: 31px;
 }
 
 @media (min-width: $tablet-width) {
   .catalog {
     width: 768px;
     margin: 0 auto;
-    padding-top: 90px;
+    padding-top: 73px;
     padding-left: 50px;
     padding-right: 50px;
   }
@@ -31,14 +30,15 @@
   }
 
   .catalog__item {
-    margin-bottom: 50px;
+    margin-bottom: 54px;
   }
 }
-
 
 @media (min-width: $desktop-width) {
   .catalog {
     width: 1150px;
+    margin-bottom: 4px;
+    padding-top: 125px;
   }
 
   .catalog__list {

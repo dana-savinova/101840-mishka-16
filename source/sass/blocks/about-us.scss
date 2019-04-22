@@ -106,6 +106,21 @@
   .about-us {
     width: 768px;
     margin: 0 auto;
+    padding-top: 65px;
+    padding-right: 50px;
+    padding-bottom: 49px;
+    padding-left: 50px;
+
+    &::before {
+      height: 17px;
+
+      background-size: auto 15.5px;
+      background-position-x: 93.4px;
+    }
+  }
+
+  .about-us__title {
+    margin-left: -4px;
   }
 
   .about-us__list {
@@ -117,18 +132,86 @@
 
   .about-us__item {
     width: 334px;
+    margin-bottom: 34px;
+    padding-top: 77px;
+
+    font-size: 20px;
+    line-height: 22px;
   }
 
-  .about-us__item:nth-child(odd) {
-    padding-right: 81px;
+  .about-us__item--eco {
+    order: 1;
+
+    &::before {
+      top: 23px;
+      left: 9px;
+    }
+  }
+
+  .about-us__item--handmade {
+    order: 2;
+
+    &::before {
+      top: 25px;
+      left: 3px;
+    }
+  }
+
+  .about-us__item--nordic {
+    order: 3;
+
+    &::before {
+      top: 23px;
+      left: 1px;
+    }
+  }
+
+  .about-us__item--domestic {
+    order: 4;
+
+    &::before {
+      top: 27px;
+      left: -6px;
+    }
+  }
+
+  .about-us__item--likes {
+    order: 5;
+
+    &::before {
+      top: 29px;
+      left: 9px;
+    }
+  }
+
+  .about-us__item--gift {
+    order: 6;
+
+    &::before {
+      top: 24px;
+      left: 3px;
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
   .about-us {
     width: 1150px;
+    padding-top: 72px;
     padding-right: 225px;
+    padding-bottom: 56px;
     padding-left: 225px;
+
+    &::before {
+      top: -9px;
+      left: 50px;
+
+      width: 1050px;
+      height: 22px;
+
+      background-size: auto 21px;
+      background-position: 234.8px 1px;
+    }
   }
 
   .about-us__item {

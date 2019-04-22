@@ -1,8 +1,8 @@
 .button {
-  display: inline-block;
+  display: block;
   width: 100%;
   padding-top: 15px;
-  padding-bottom: 15px;
+  padding-bottom: 13px;
 
 
   font-size: $important-text;
@@ -14,7 +14,8 @@
 
   color: $main-text-color;
   background-color: $bg-white;
-  border: 1px solid $main-text-color;
+  // box-shadow: 0 0 0 2px $main-text-color;
+  border: 2px solid $main-text-color;
 
   &:hover,
   &:focus {
@@ -26,5 +27,12 @@
   &:active {
     color: rgba(255, 255, 255, 0.3);
     background-color: $bg-grey;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .button {
+    font-size: 17px;
+    line-height: 20px;
   }
 }

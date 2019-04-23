@@ -24,6 +24,7 @@
 .order__group {
   margin: 0;
   padding: 0;
+
   border: none;
 }
 
@@ -32,11 +33,11 @@
 
   margin-bottom: 20px;
 
+  font-weight: bold;
   font-size: $important-text;
   line-height: 17px;
-  font-weight: bold;
-  color: $brand-color;
   text-transform: uppercase;
+  color: $brand-color;
 
   @media (max-width: 767px) {
     &::after {
@@ -60,7 +61,6 @@
 
 .order__item {
   display: flex;
-
   flex-direction: column;
 }
 
@@ -71,10 +71,9 @@
   padding-right: 30px;
   padding-bottom: 26px;
 
-
+  font-weight: bold;
   font-size: $important-text;
   line-height: 18px;
-  font-weight: bold;
 }
 
 .order__input {
@@ -132,6 +131,7 @@
 
   width: 40px;
   height: 40px;
+
   border: 2px solid $bg-grey;
 }
 
@@ -144,6 +144,7 @@
 
   width: 22px;
   height: 17px;
+
   background-image: url("../img/icon-tick.svg");
   background-size: 100%;
   background-repeat: no-repeat;
@@ -172,10 +173,11 @@
   }
 
   .order__wrapper {
-    display: flex;
     width: 768px;
     padding-right: 50px;
     padding-left: 50px;
+
+    display: flex;
   }
 
   .order__text {
@@ -199,12 +201,12 @@
 
   .order__item {
     width: 501px;
+
     flex-direction: row;
   }
 
   .order__list--color {
     display: flex;
-
     flex-wrap: wrap;
   }
 
@@ -221,8 +223,9 @@
   }
 
   .order__button {
-    order: -1;
     width: 230px;
+
+    order: -1;
   }
 
   .order__hint {

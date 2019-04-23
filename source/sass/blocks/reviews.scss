@@ -36,9 +36,9 @@
   display: block;
   margin-bottom: 3px;
 
+  font-weight: bold;
   font-size: $important-text;
   line-height: 24px;
-  font-weight: bold;
 }
 
 .reviews__profile {
@@ -50,10 +50,11 @@
 
 .reviews__toggles {
   @include list-reset;
-  display: flex;
+
   width: 260px;
   margin-bottom: 39px;
 
+  display: flex;
   justify-content: space-between;
 
   box-shadow: 0 0 0 1px $border-grey;
@@ -74,6 +75,7 @@
 .reviews__button {
   width: 83px;
   height: 48px;
+
   background-color: $bg-white;
   border: none;
 
@@ -91,14 +93,14 @@
 
 .reviews__button--prev {
   background-image: url("../img/icon-left-arrow.svg");
-  background-repeat: no-repeat;
   background-position: 50%;
+  background-repeat: no-repeat;
 }
 
 .reviews__button--next {
   background-image: url("../img/icon-right-arrow.svg");
-  background-repeat: no-repeat;
   background-position: 50%;
+  background-repeat: no-repeat;
 }
 
 @media (min-width: $tablet-width) {
@@ -122,10 +124,10 @@
   }
 
   .reviews__title {
-    order: -2;
-
     margin: 0;
     margin-left: -3px;
+
+    order: -2;
   }
 
   .reviews__list {
@@ -146,12 +148,12 @@
 
   .reviews__link {
     width: 176px;
+
     order: -1;
   }
 
   .reviews__toggles {
     width: 175px;
-
     margin-left: auto;
     margin-top: -83px;
 

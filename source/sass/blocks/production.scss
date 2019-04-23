@@ -11,8 +11,8 @@
 .production__title {
   position: relative;
   margin: 0;
-  margin-bottom: 23px;
   padding: 0;
+  margin-bottom: 23px;
   padding-left: 90px;
 
   font-size: $important-text;
@@ -27,6 +27,7 @@
 
     width: 32px;
     height: 32px;
+
     background-image: url("../img/icon-video.svg");
     background-repeat: no-repeat;
   }
@@ -53,8 +54,8 @@
 
 .production__text {
   margin: 0;
-  margin-bottom: 25px;
   padding: 0;
+  margin-bottom: 25px;
   padding-right: 35px;
   padding-left: 33px;
 
@@ -70,8 +71,8 @@
 @media (min-width: $tablet-width) {
   .production {
     width: 668px;
-    margin-bottom: 64px;
     padding: 0;
+    margin-bottom: 64px;
     padding-bottom: 45px;
   }
 
@@ -81,14 +82,14 @@
   }
 
   .production__video {
-    order: -1;
-
     margin-left: -1px;
     margin-top: -1px;
     margin-bottom: 38px;
 
-    border-left: 1px solid white;
+    order: -1;
+
     border-bottom: 1px solid $border-grey;
+    border-left: 1px solid white;
   }
 
   .production__image {

@@ -6,9 +6,9 @@
 
 .catalog__list {
   @include list-reset;
+
   display: flex;
   justify-content: space-around;
-
   flex-wrap: wrap;
 }
 
@@ -21,8 +21,8 @@
     width: 768px;
     margin: 0 auto;
     padding-top: 73px;
-    padding-left: 50px;
     padding-right: 50px;
+    padding-left: 50px;
   }
 
   .catalog__list {

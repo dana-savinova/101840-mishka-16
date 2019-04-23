@@ -10,13 +10,13 @@
   padding-bottom: 31px;
   padding-left: 25px;
 
+  text-align: center;
+
   background-color: #ffffff;
   border: 1px solid #c6c6c6;
 
   transform: translate(-50%, -50%);
   box-shadow: 0 5px 5px 0 rgba(0, 1, 1, 0.25);
-
-  text-align: center;
 }
 
 .modal-cart__title {
@@ -25,7 +25,6 @@
 
   font-size: $section-title-text;
   line-height: 30px;
-
   text-transform: uppercase;
 }
 
@@ -39,8 +38,8 @@
   margin-bottom: 21px;
 
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .modal-cart__item {
@@ -49,17 +48,17 @@
 
 .modal-cart__label {
   width: 82px;
+  min-height: 52px;
   padding-top: 16px;
   padding-right: 10px;
   padding-bottom: 16px;
   padding-left: 10px;
-  min-height: 52px;
 
+  font-weight: bold;
   font-size: 17px;
   line-height: 16px;
-  font-weight: bold;
-  color: #444444;
   text-transform: uppercase;
+  color: #444444;
 
   border: 2px solid rgba(68, 68, 68, 0.1);
 
@@ -82,6 +81,7 @@
   padding-left: 10px;
 
   color: #ffffff;
+
   background-color: $brand-color;
   border-color: $brand-color;
 

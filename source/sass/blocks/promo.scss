@@ -19,9 +19,9 @@
   display: inline-block;
   margin-bottom: 24px;
 
+  font-weight: bold;
   font-size: $important-text;
   line-height: 20px;
-  font-weight: bold;
   text-transform: uppercase;
   color: $brand-color;
 }
@@ -35,17 +35,18 @@
 }
 
 .promo__spec {
-  display: flex;
   margin: 0;
   margin-bottom: 27px;
 
+  display: flex;
   flex-direction: column;
 }
 
 .promo__row {
-  display: flex;
   padding-top: 10px;
   padding-bottom: 10px;
+
+  display: flex;
 
   box-shadow: inset 0 -1px 0 0 $border-grey;
   // border-bottom: 1px solid $border-grey;
@@ -86,13 +87,12 @@
   }
 
   .promo__title-wrapper {
-    display: flex;
     width: 100%;
     margin-bottom: 45px;
 
-    align-items: center;
-
+    display: flex;
     justify-content: space-between;
+    align-items: center;
   }
 
   .promo__title {
@@ -107,7 +107,6 @@
 
     font-size: 17px;
     line-height: 17px;
-
     text-align: center;
   }
 

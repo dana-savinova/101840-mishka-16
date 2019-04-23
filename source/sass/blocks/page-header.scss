@@ -1,5 +1,6 @@
 .page-header {
   padding-top: 21px;
+
   border-top: 1px solid $border-grey;
 }
 
@@ -11,7 +12,6 @@
 
 .page-header__nav {
   position: relative;
-
   z-index: 1;
 
   width: 100%;
@@ -55,6 +55,7 @@
 
     &::before {
       content: "";
+
       position: absolute;
       top: 0;
       left: 0;
@@ -62,8 +63,6 @@
       width: 21px;
       height: 21px;
 
-      // background-color: $black;
-      // box-shadow: 0 6px 0 0 $black, 0 12px 0 0 $black;
       background-image: url("../img/icon-menu-open.svg");
       background-repeat: no-repeat;
     }
@@ -103,16 +102,16 @@
 @media (min-width: $tablet-width) {
   .page-header {
     max-width: 768px;
-    margin: 0 auto;
     padding: 0;
+    margin: 0 auto;
     padding-right: 50px;
     padding-left: 50px;
   }
 
   .page-header__nav {
-    display: flex;
     width: auto;
 
+    display: flex;
     flex-wrap: wrap;
   }
 
@@ -127,6 +126,7 @@
 
   .page-header__list--user {
     width: 350px;
+
     order: -1;
   }
 
@@ -171,9 +171,9 @@
   }
 
   .page-header__list--shop {
-    display: flex;
     width: 410px;
 
+    display: flex;
     flex-wrap: wrap;
   }
 }

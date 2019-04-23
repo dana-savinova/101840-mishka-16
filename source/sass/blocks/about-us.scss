@@ -18,9 +18,9 @@
     height: 6px;
 
     background-image: url("../img/bg-zigzag-line.svg");
-    background-repeat: repeat-x;
-    background-size: auto 100%;
     background-position-x: -6px;
+    background-size: auto 100%;
+    background-repeat: repeat-x;
   }
 }
 
@@ -29,10 +29,10 @@
 }
 
 .about-us__list {
+  @include list-reset;
+
   display: flex;
   flex-direction: column;
-
-  @include list-reset;
 }
 
 .about-us__item {
@@ -42,8 +42,8 @@
   padding-top: 60px;
 
   font-size: $important-text;
-  line-height: 20px;
   font-weight: bold;
+  line-height: 20px;
 
   &::before {
     content: "";
@@ -55,8 +55,8 @@
     width: 60px;
     height: 60px;
 
-    background-repeat: no-repeat;
     background-size: auto;
+    background-repeat: no-repeat;
   }
 }
 
@@ -114,8 +114,8 @@
     &::before {
       height: 17px;
 
-      background-size: auto 15.5px;
       background-position-x: 93.4px;
+      background-size: auto 15.5px;
     }
   }
 
@@ -209,8 +209,8 @@
       width: 1050px;
       height: 22px;
 
-      background-size: auto 21px;
       background-position: 234.8px 1px;
+      background-size: auto 21px;
     }
   }
 

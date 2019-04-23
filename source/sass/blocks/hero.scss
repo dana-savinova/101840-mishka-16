@@ -10,9 +10,9 @@
   padding-top: 71px;
 
   background-image: url("../img/hero-mobile@1x.jpg");
-  background-repeat: no-repeat;
   background-position-x: center;
   background-position-y: -19px;
+  background-repeat: no-repeat;
 }
 
 .hero__title {
@@ -34,6 +34,7 @@
   &:hover,
   &:focus {
     transform: translateY(-5px);
+
     outline: none;
   }
 }
@@ -49,9 +50,9 @@
   padding-bottom: 30px;
   padding-left: 30px;
 
+  font-weight: bold;
   font-size: 19px;
   line-height: 24px;
-  font-weight: bold;
   text-decoration: none;
 
   &::after {
@@ -68,6 +69,7 @@
 
 .hero__link--interior {
   color: #ffffff;
+
   background-color: $brand-color;
 
   &:hover {
@@ -79,13 +81,14 @@
     right: 25px;
 
     background-image: url("../img/icon-interior.svg");
-    background-repeat: no-repeat;
     background-position: center;
+    background-repeat: no-repeat;
   }
 }
 
 .hero__link--toys {
   color: #ffffff;
+
   background-color: $brand-color-dark;
 
   &:hover {
@@ -97,8 +100,8 @@
     right: 25px;
 
     background-image: url("../img/icon-toy.svg");
-    background-repeat: no-repeat;
     background-position: center;
+    background-repeat: no-repeat;
   }
 }
 
@@ -120,8 +123,8 @@
       height: 19px;
 
       background-image: url("../img/bg-zigzag-fill.svg");
-      background-size: 100%;
       background-position-x: 0;
+      background-size: 100%;
       background-repeat: repeat-x;
     }
   }
@@ -147,7 +150,6 @@
     position: relative;
 
     display: flex;
-
     flex-wrap: wrap;
   }
 
@@ -182,8 +184,8 @@
     &::after {
       height: 34px;
 
-      background-size: auto 37px;
       background-position-x: 11px;
+      background-size: auto 37px;
     }
   }
 

@@ -1,9 +1,11 @@
 .order {
-  padding-top: 25px;
-  padding-bottom: 50px;
+  padding-top: 21px;
+  padding-bottom: 54px;
 }
 
 .order__wrapper {
+  position: relative;
+
   width: 320px;
   margin: 0 auto;
   padding-right: 30px;
@@ -24,14 +26,23 @@
 .order__group {
   margin: 0;
   padding: 0;
+  margin-bottom: 28px;
 
   border: none;
+}
+
+.order__group--name {
+  margin-bottom: 12px;
+}
+
+.order__group--additional {
+  margin-bottom: -1px;
 }
 
 .order__title {
   position: relative;
 
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 
   font-weight: bold;
   font-size: $important-text;
@@ -55,21 +66,44 @@
   }
 }
 
+.order__title--name {
+  margin-bottom: 27px;
+}
+
+.order__title--phone,
+.order__title--email {
+  margin-bottom: 7px;
+}
+
+.order__title--email {
+  &::after {
+    left: 81px;
+
+    width: 179px;
+  }
+}
+
 .order__list {
   @include list-reset;
 }
 
 .order__item {
+  margin-bottom: 15px;
+
   display: flex;
   flex-direction: column;
+}
+
+.order__item--name:not(:last-child) {
+  margin-bottom: 19px;
 }
 
 .order__label {
   position: relative;
 
-  padding-top: 20px;
-  padding-right: 30px;
-  padding-bottom: 26px;
+  // padding-top: 20px;
+  // padding-right: 30px;
+  // padding-bottom: 26px;
 
   font-weight: bold;
   font-size: $important-text;
@@ -77,23 +111,66 @@
 }
 
 .order__input {
-  width: 100%;
-  padding-top: 16px;
-  padding-bottom: 16px;
+  width: 260px;
+  min-height: 52px;
 
+  margin-bottom: 3px;
+  padding-top: 11px;
+  padding-right: 15px;
+  padding-bottom: 12px;
+  padding-left: 0;
+
+  font-weight: normal;
+  font-size: $important-text;
+  line-height: 18px;
+
+  background-color: transparent;
   border: none;
-  border-bottom: 1px solid #000000;
+  border-bottom: 2px solid #000000;
+  border-radius: 0;
+
+  &:hover,
+  &:focus {
+    border-color: $brand-color;
+
+    outline: none;
+  }
+
+  &:active {
+    border-color: $brand-color;
+  }
 }
 
-.order__label--radio {
-  padding-left: 60px;
+.order__input--phone,
+.order__input--email {
+  padding-right: 40px;
+}
+
+.order__icon {
+  position: absolute;
+
+  bottom: 12px;
+  right: 34px;
+
+  fill: rgba(0, 0, 0, 0.2);
+}
+
+.order__input:focus + .order__icon,
+.order__input:hover + .order__icon,
+.order__input:active + .order__icon {
+  fill: $brand-color;
+}
+
+.order__icon--phone {
+  bottom: 20px;
+  right: 37px;
 }
 
 .order__radio + .order__label--radio::before {
   content: "";
 
   position: absolute;
-  top: 10px;
+  top: -2px;
   left: 0;
 
   width: 40px;
@@ -107,7 +184,7 @@
   content: "";
 
   position: absolute;
-  top: 22px;
+  top: 11px;
   left: 12px;
 
   width: 16px;
@@ -117,16 +194,25 @@
   border-radius: 50%;
 }
 
+.order__label--radio {
+  padding-top: 9px;
+  padding-left: 62px;
 
-.order__label--checkbox {
-  padding-left: 60px;
+  &:hover::before,
+  &:focus::before {
+    border-color: $brand-color;
+  }
+
+  &:active::before {
+    border-color: $border-grey;
+  }
 }
 
 .order__checkbox + .order__label--checkbox::before {
   content: "";
 
   position: absolute;
-  top: 10px;
+  top: -2px;
   left: 0;
 
   width: 40px;
@@ -139,8 +225,8 @@
   content: "";
 
   position: absolute;
-  top: 20px;
-  left: 10px;
+  top: 11px;
+  left: 8px;
 
   width: 22px;
   height: 17px;
@@ -150,14 +236,47 @@
   background-repeat: no-repeat;
 }
 
+.order__label--checkbox {
+  padding-top: 10px;
+  padding-left: 62px;
+
+  &:hover::before,
+  &:focus::before {
+    border-color: $brand-color;
+  }
+
+  &:active::before {
+    border-color: $border-grey;
+  }
+}
+
+.order__item--color:not(:last-child) {
+  margin-bottom: 33px;
+}
+
 .order__textarea {
   width: 100%;
-  height: 149px;
+  height: 142px;
+  padding: 14px;
 
-  border: 1px solid #000000;
+  font-size: 17px;
+  line-height: 18px;
+
+  border: 2px solid #000000;
+  border-radius: 0;
+
+  &:hover,
+  &:focus {
+    border-color: $brand-color;
+
+    outline: none;
+  }
 }
 
 .order__hint {
+  margin-bottom: 31px;
+  padding: 0;
+
   font-size: 14px;
   line-height: 16px;
 }

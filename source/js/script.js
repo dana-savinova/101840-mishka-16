@@ -1,8 +1,8 @@
 var headerNav = document.querySelector('.page-header__nav');
 var headerToggle = document.querySelector('.page-header__toggle');
-var promoBtn = document.querySelector('.promo__button');
 var popUpOverlay = document.querySelector('.modal-overlay');
 var popUp = document.querySelector('.modal-cart');
+var buyButton = document.querySelectorAll('.button-buy-js');
 
 headerNav.classList.remove('page-header__nav--nojs');
 // Открытие меню
@@ -16,19 +16,24 @@ headerToggle.addEventListener('click', function() {
     }
   });
 
-//Открытие попапа
-promoBtn.addEventListener('click', function (evt) {
-  evt.preventDefault();
-  popUpOverlay.classList.add('modal-overlay--show');
-});
+//Добавление товара в корзину
+if(buyButton.length) {
+  for (var i = 0; i < buyButton.length; i++) {
+    buyButton[i].addEventListener('click', function (evt) {
+      evt.preventDefault();
+      popUpOverlay.classList.add('modal-overlay--show');
+    });
+  }
 
-popUpOverlay.addEventListener('click', function() {
-  popUpOverlay.classList.remove('modal-overlay--show');
-});
+  popUpOverlay.addEventListener('click', function() {
+    popUpOverlay.classList.remove('modal-overlay--show');
+  });
 
-popUp.addEventListener('click', function (evt) {
-  evt.stopPropagation();
-});
+  popUp.addEventListener('click', function (evt) {
+    evt.stopPropagation();
+  });
+
+};
 
 window.addEventListener('keydown', function (evt) {
   if (evt.keyCode === 27) {

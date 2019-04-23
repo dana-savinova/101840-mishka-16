@@ -112,6 +112,7 @@
 
 @media (min-width: $tablet-width) {
   .contacts {
+    width: 768px;
     padding-top: 77px;
     padding-bottom: 57px;
 
@@ -168,6 +169,7 @@
     margin-bottom: 26px;
 
     flex-direction: row;
+    flex-wrap: wrap;
   }
 
   .contacts__item {

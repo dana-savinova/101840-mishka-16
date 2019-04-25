@@ -1,0 +1,102 @@
+.modal-cart {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+
+  display: block;
+  width: 320px;
+  padding-top: 31px;
+  padding-right: 25px;
+  padding-bottom: 31px;
+  padding-left: 25px;
+
+  text-align: center;
+
+  background-color: #ffffff;
+  border: 1px solid #c6c6c6;
+
+  transform: translate(-50%, -50%);
+  box-shadow: 0 5px 5px 0 rgba(0, 1, 1, 0.25);
+}
+
+.modal-cart__title {
+  margin: 0;
+  padding: 0;
+
+  font-size: $section-title-text;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.modal-cart__hint {
+  font-size: 15px;
+  line-height: 30px;
+}
+
+.modal-cart__list {
+  @include list-reset;
+  margin-bottom: 21px;
+
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.modal-cart__item {
+  display: flex;
+}
+
+.modal-cart__label {
+  width: 82px;
+  min-height: 52px;
+  padding-top: 16px;
+  padding-right: 10px;
+  padding-bottom: 16px;
+  padding-left: 10px;
+
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #444444;
+
+  border: 2px solid rgba(68, 68, 68, 0.1);
+
+  &:hover {
+    border-color: rgba(68, 68, 68, 0.3);
+  }
+}
+
+.modal-cart__input:focus + .modal-cart__label,
+.modal-cart__input:checked + .modal-cart__label {
+  border-color: $brand-color;
+
+  outline: none;
+}
+
+.modal-cart__button {
+  padding-top: 17px;
+  padding-right: 10px;
+  padding-bottom: 15px;
+  padding-left: 10px;
+
+  color: #ffffff;
+
+  background-color: $brand-color;
+  border-color: $brand-color;
+
+  &:hover,
+  &:focus {
+    border-color: $main-text-color;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .modal-cart {
+    width: 570px;
+    padding-top: 50px;
+    padding-right: 110px;
+    padding-bottom: 46px;
+    padding-left: 110px;
+  }
+}

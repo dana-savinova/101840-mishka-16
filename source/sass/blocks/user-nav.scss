@@ -2,7 +2,6 @@
   position: relative;
 
   display: block;
-
   padding-top: 29px;
   padding-left: 76px;
   padding-bottom: 30px;
@@ -10,7 +9,6 @@
   font-size: $important-text;
   font-weight: bold;
   color: $nav-links-color;
-
   text-decoration: none;
 
   border-top: 1px solid $border-grey;
@@ -53,8 +51,8 @@
 
   .user-nav__link {
     padding-top: 32px;
-    padding-left: 83px;
     padding-bottom: 35px;
+    padding-left: 83px;
 
     border: none;
   }

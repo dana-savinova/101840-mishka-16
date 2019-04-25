@@ -6,3 +6,17 @@
   line-height: 30px;
   color: $title-color;
 }
+
+@media (min-width: $tablet-width) {
+  .section-title {
+    font-size: $tablet-section-title;
+    line-height: 50px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .section-title {
+    font-size: $desktop-section-title;
+    line-height: 57px;
+  }
+}

@@ -4,10 +4,9 @@
   padding-left: 76px;
   padding-bottom: 29px;
 
-  font-size: $important-text;
   font-weight: bold;
+  font-size: $important-text;
   color: $nav-links-color;
-
   text-decoration: none;
 
   border-top: 1px solid $border-grey;
@@ -27,7 +26,6 @@
 @media (min-width: $tablet-width) {
   .site-nav {
     display: flex;
-
     flex-wrap: wrap;
   }
 
@@ -47,6 +45,7 @@
 @media (min-width: $desktop-width) {
   .site-nav__item:nth-child(odd) {
     width: 184px;
+
     border-right: 1px solid $border-grey;
   }
 

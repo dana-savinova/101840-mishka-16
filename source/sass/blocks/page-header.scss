@@ -1,5 +1,6 @@
 .page-header {
   padding-top: 21px;
+
   border-top: 1px solid $border-grey;
 }
 
@@ -11,73 +12,107 @@
 
 .page-header__nav {
   position: relative;
+  z-index: 1;
 
   width: 100%;
-}
-
-.page-header__list--shop {
-  display: none;
-}
-
-.page-header__toggle {
-  position: absolute;
-  top: 0;
-  right: 30px;
-
-  display: block;
-  width: 20px;
-  height: 20px;
-
-  background-color: $white;
-  border: none;
-
-  &:active,
-  &:focus {
-    opacity: 0.3;
-
-    outline: none;
-  }
-
-  &::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-
-    width: 20px;
-    height: 2px;
-
-    background-color: $black;
-    box-shadow: 0 6px 0 0 $black, 0 12px 0 0 $black;
-  }
-}
-
-.page-header__delivery {
-  display: none;
 }
 
 .page-header__list {
   @include list-reset;
 }
 
+.page-header__toggle {
+  display: none;
+}
+
+.page-header__list--shop {
+  display: none;
+}
+
+.page-header__delivery {
+  display: none;
+}
+
+@media (max-width: $mobile-width-only) {
+  .page-header__toggle {
+    position: absolute;
+    top: 10px;
+    right: 30px;
+
+    display: block;
+    width: 21px;
+    height: 21px;
+
+    background-color: $white;
+    border: none;
+
+    &:active,
+    &:focus {
+      opacity: 0.3;
+
+      outline: none;
+    }
+
+    &::before {
+      content: "";
+
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      width: 21px;
+      height: 21px;
+
+      background-image: url("../img/icon-menu-open.svg");
+      background-repeat: no-repeat;
+    }
+  }
+
+  .page-header__nav--closed .page-header__list {
+    display: none;
+  }
+
+  .page-header__nav--opened .page-header__list {
+    display: block;
+
+    &--shop {
+      display: none;
+    }
+  }
+
+  .page-header__nav--opened .page-header__toggle {
+    &::before {
+      background-image: url("../img/icon-menu-close.svg");
+    }
+  }
+
+  .page-header__nav--nojs .page-header__toggle {
+    display: none;
+  }
+
+  .page-header__nav--nojs .page-header__list {
+    display: block;
+
+    &--shop {
+      display: none;
+    }
+  }
+}
+
 @media (min-width: $tablet-width) {
   .page-header {
     max-width: 768px;
-    margin: 0 auto;
     padding: 0;
+    margin: 0 auto;
     padding-right: 50px;
     padding-left: 50px;
   }
 
   .page-header__nav {
-    display: flex;
     width: auto;
 
+    display: flex;
     flex-wrap: wrap;
-  }
-
-  .page-header__toggle {
-    display: none;
   }
 
   .page-header__logo {
@@ -91,6 +126,7 @@
 
   .page-header__list--user {
     width: 350px;
+
     order: -1;
   }
 
@@ -135,9 +171,9 @@
   }
 
   .page-header__list--shop {
-    display: flex;
     width: 410px;
 
+    display: flex;
     flex-wrap: wrap;
   }
 }

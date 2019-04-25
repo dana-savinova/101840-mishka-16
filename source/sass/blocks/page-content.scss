@@ -1,8 +1,8 @@
 .page-content__title-wrapper {
-  padding-top: 75px;
-  padding-right: 30px;
+  padding-top: 72px;
+  padding-right: 32px;
   padding-left: 30px;
-  padding-bottom: 71px;
+  padding-bottom: 77px;
 
   background-color: #f1f1f1;
 }
@@ -13,20 +13,67 @@
 
   font-size: $main-title-text;
   line-height: 30px;
-  color: $title-color;
   text-align: center;
+  color: $title-color;
 }
 
 
 @media (min-width: $tablet-width) {
+  .page__content__container {
+    position: relative;
+
+    &::after {
+      content: "";
+
+      position: absolute;
+      bottom: 0;
+      left: 0;
+
+      width: 100%;
+      height: 19px;
+
+      background-image: url("../img/bg-zigzag-fill.svg");
+      background-position-x: 0;
+      background-size: 100%;
+      background-repeat: repeat-x;
+    }
+  }
+
+  .page-content__title-wrapper {
+    margin-top: -78px;
+    padding-top: 95px;
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-bottom: 86px;
+
+    background-color: #f1f1f1;
+
+    border-top: 1px solid $border-grey;
+  }
+
   .page-content__title {
     max-width: 768px;
     margin: 0 auto;
+    padding: 0;
+
+    font-size: 43px;
+    line-height: 50px;
+    text-align: center;
+    color: $title-color;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .page-content__title-wrapper {
+    margin-top: -72px;
+    padding-top: 94px;
+    padding-bottom: 106px;
+  }
+
   .page-content__title {
     max-width: 1150px;
+
+    font-size: 53px;
+    line-height: 57px;
   }
 }

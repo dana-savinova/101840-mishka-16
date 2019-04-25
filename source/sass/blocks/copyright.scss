@@ -1,5 +1,5 @@
 .copyright {
-  width: 188px;
+  display: flex;
 }
 
 .copyright__icon {
@@ -7,18 +7,18 @@
 }
 
 .copyright__text {
-  margin-right: 25px;
+  margin-right: auto;
 
+  font-weight: bold;
   font-size: 19px;
   line-height: 19px;
-  font-weight: bold;
-
   color: $main-text-color;
 }
 
 .copyright__link {
-  display: flex;
+  width: 100%;
 
+  display: flex;
   align-items: center;
 
   text-decoration: none;

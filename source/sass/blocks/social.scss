@@ -1,3 +1,15 @@
+.social {
+  @include list-reset;
+
+  padding-right: 54px;
+  padding-bottom: 19px;
+  padding-left: 49px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .social__icon {
   fill: #231f20;
 }
@@ -25,5 +37,14 @@
 
   &:active .social__icon {
     fill: $footer-link-color;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .social {
+    margin: 0;
+    padding: 0;
+    padding-top: 8px;
+    padding-bottom: 8px;
   }
 }

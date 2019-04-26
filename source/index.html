@@ -95,9 +95,9 @@
           </dl>
           <div class="promo__photo-wrapper">
             <picture>
-              <source media="(min-width:1150px)" srcset="img/triple-set-desktop@1x.jpg">
-              <source media="(min-width:768px)" srcset="img/triple-set-tablet@1x.jpg">
-              <img class="promo__photo" src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="Вязанные корзинки">
+              <source media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.jpg, img/triple-set-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg, img/triple-set-tablet@2x.jpg 2x">
+              <img class="promo__photo" src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg 2x" width="260" height="315" alt="Вязанные корзинки">
             </picture>
           </div>
           <b class="promo__price">Цена: 990 руб.</b>
@@ -160,7 +160,11 @@
         </div>
         <div class="contacts__map">
           <iframe class="contacts__google-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533268!2d30.320858716160497!3d59.938716481876156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x62740c0ffcd8a91f!2sBolshaya+Konyushennaya+Street%2C+19%2F8%2C+101%2C+Sankt-Peterburg%2C+191186!5e0!3m2!1sen!2sru!4v1554301828540!5m2!1sen!2sru" width="320" height="454" frameborder="0" style="border:0" allowfullscreen></iframe>
-          <img class="contacts__static-map" src="img/map-mobile@1x.jpg" width="320" height="454" alt="Адрес: г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101">
+          <picture>
+            <source media="(min-width: 1150px)" srcset="img/map-desktop@1x.jpg, img/map-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/map-tablet@1x.jpg, img/map-tablet@2x.jpg 2x">
+            <img class="contacts__static-map" src="img/map-mobile@1x.jpg" srcset="img/map-mobile@2x.jpg 2x" width="320" height="454" alt="Адрес: г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101">
+          </picture>
         </div>
         <a class="button contacts__button" href="write-us.html">Напишите нам</a>
       </section>

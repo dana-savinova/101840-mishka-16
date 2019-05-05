@@ -19,7 +19,7 @@
 
 
 @media (min-width: $tablet-width) {
-  .page__content__container {
+  .page-content__container {
     position: relative;
 
     &::after {
@@ -66,8 +66,8 @@
 @media (min-width: $desktop-width) {
   .page-content__title-wrapper {
     margin-top: -72px;
-    padding-top: 94px;
-    padding-bottom: 106px;
+    padding-top: 92px;
+    padding-bottom: 104px;
   }
 
   .page-content__title {

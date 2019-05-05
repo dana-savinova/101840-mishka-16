@@ -1,5 +1,5 @@
 .page-footer {
-  padding-top: 29px;
+  padding-top: 27px;
 
   background-color: #f1f1f1;
 }
@@ -62,11 +62,16 @@
   .page-footer__copyright {
     width: 184px;
     margin: 0;
+    margin-top: 4px;
     margin-left: auto;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .page-footer {
+    padding-top: 52px;
+  }
+
   .page-footer__wrapper {
     width: 1150px;
   }

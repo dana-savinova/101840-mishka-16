@@ -64,7 +64,7 @@
 .promo__photo {
   width: 260px;
   height: 315px;
-  margin-bottom: 20px;
+  margin-bottom: 22px;
 }
 
 .promo__price {
@@ -215,5 +215,13 @@
   .promo__row {
     padding-top: 9px;
     padding-bottom: 12px;
+  }
+
+  .promo__price {
+    margin-bottom: 34px;
+  }
+
+  .promo__button {
+    margin-left: 2px;
   }
 }

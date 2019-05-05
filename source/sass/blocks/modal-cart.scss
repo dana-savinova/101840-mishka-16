@@ -5,10 +5,11 @@
 
   display: block;
   width: 320px;
+  min-height: 336px;
   padding-top: 31px;
-  padding-right: 25px;
-  padding-bottom: 31px;
-  padding-left: 25px;
+  padding-right: 30px;
+  padding-bottom: 46px;
+  padding-left: 30px;
 
   text-align: center;
 
@@ -26,9 +27,12 @@
   font-size: $section-title-text;
   line-height: 30px;
   text-transform: uppercase;
+  color: $black;
 }
 
 .modal-cart__hint {
+  margin-bottom: 23px;
+
   font-size: 15px;
   line-height: 30px;
 }
@@ -95,8 +99,22 @@
   .modal-cart {
     width: 570px;
     padding-top: 50px;
-    padding-right: 110px;
+    padding-right: 107px;
     padding-bottom: 46px;
-    padding-left: 110px;
+    padding-left: 107px;
+  }
+
+  .modal-cart__title {
+    font-size: 30px;
+    line-height: 57px;
+  }
+
+  .modal-cart__hint {
+    font-size: $important-text;
+    line-height: 30px;
+  }
+
+  .modal-cart__label {
+    width: 111px;
   }
 }

@@ -114,6 +114,7 @@
 
     background-image: url("../img/review@1x.jpg");
     background-repeat: no-repeat;
+    background-color: #ffffff;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/review@2x.jpg");

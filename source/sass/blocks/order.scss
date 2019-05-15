@@ -146,6 +146,11 @@
   }
 }
 
+.order__radio:focus + .order__label--radio::before,
+.order__checkbox:focus + .order__label--checkbox::before {
+  border-color: $brand-color;
+}
+
 .order__checkbox + .order__label--checkbox::before {
   content: "";
 

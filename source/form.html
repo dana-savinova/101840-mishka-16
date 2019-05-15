@@ -72,8 +72,8 @@
         <h2 class="visually-hidden">Форма оформления заказа</h2>
         <p class="order__text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
         <form class="order__form" action="https://echo.htmlacademy.ru" method="post">
-          <fieldset class="order__group">
-            <div class="order__wrapper">
+          <div class="order__wrapper">
+            <fieldset class="order__group">
               <legend class="order__title order__title--type">Тип</legend>
               <ul class="order__list">
                 <li class="order__item">
@@ -85,10 +85,10 @@
                   <label class="order__label order__label--radio" for="children-toy">Детская игрушка</label>
                 </li>
               </ul>
-            </div>
-          </fieldset>
-          <fieldset class="order__group order__group--grey">
-            <div class="order__wrapper order__wrapper--color">
+            </fieldset>
+          </div>
+          <div class="order__wrapper order__wrapper--grey">
+            <fieldset class="order__group order__group--color">
               <legend class="order__title order__title--color">Цвет</legend>
               <ul class="order__list order__list--color">
                 <li class="order__item order__item--color">
@@ -116,11 +116,11 @@
                   <label class="order__label order__label--checkbox" for="orange">Оранжевый</label>
                 </li>
               </ul>
-            </div>
-          </fieldset>
-          <fieldset class="order__group order__group--name">
-            <div class="order__wrapper">
-              <legend class="order__title order__title--name">ФИО</legend>
+            </fieldset>
+          </div>
+          <div class="order__wrapper">
+            <fieldset class="order__group">
+              <legend class="order__title">ФИО</legend>
               <ul class="order__list order__list--name">
                 <li class="order__item order__item--name">
                   <label class="order__label" for="customer-name">Имя:</label>
@@ -135,35 +135,35 @@
                   <input class="order__input" type="text" id="customer-patronymic" name="patronymic" placeholder="Отчество, если желаете">
                 </li>
               </ul>
-            </div>
-          </fieldset>
-          <fieldset class="order__group order__group--grey">
-            <div class="order__wrapper">
+            </fieldset>
+          </div>
+          <div class="order__wrapper order__wrapper--grey">
+            <fieldset class="order__group">
               <legend class="order__title order__title--phone">Тел</legend>
                 <label class="visually-hidden" for="customer-phone">Телефон</label>
                 <input class="order__input order__input--phone order__input--required" type="tel" id="customer-phone" name="phone" pattern="\+7 \d{3} \d{3} \d{2} \d{2}" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
                 <svg class="order__icon order__icon--phone" width="25" height="24">
                   <use xlink:href="#icon-phone"></use>
                 </svg>
-              </div>
-          </fieldset>
-          <fieldset class="order__group order__group--grey">
-            <div class="order__wrapper">
+              </fieldset>
+          </div>
+          <div class="order__wrapper order__wrapper--grey">
+            <fieldset class="order__group">
               <legend class="order__title order__title--email">E-mail</legend>
                 <label class="visually-hidden" for="customer-email">Введите Ваш e-mail</label>
                 <input class="order__input order__input--email order__input--required"  type="email" id="customer-email" name="email" placeholder="Ваш Email*" required>
                 <svg class="order__icon order__icon--email" width="32" height="32">
                   <use xlink:href="#icon-mail"></use>
                 </svg>
-              </div>
-          </fieldset>
-          <fieldset class="order__group">
-            <div class="order__wrapper">
-              <legend class="order__title order__title--additional">Доп</legend>
+              </fieldset>
+          </div>
+          <div class="order__wrapper">
+            <fieldset class="order__group">
+              <legend class="order__title">Доп</legend>
               <label class="visually-hidden" for="additional-text">Дополнительно</label>
-              <textarea class="order__textarea" id="additional-text" name="additional-text" rows="8" cols="40" placeholder="Опишите все ваши пожелания к заказу"></textarea>
-            </div>
-          </fieldset>
+              <textarea class="order__textarea" id="additional-text" name="additional-text" rows="8" cols="30" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+            </fieldset>
+          </div>
           <div class="order__wrapper order__submit-wrapper">
             <p class="order__hint"><sup>*</sup>Поля обязательны для заполнения</p>
             <button class="button order__button" type="submit">Отправить заказ</button>
